@@ -9,9 +9,9 @@ use AlibabaCloud\VersionResolverTrait;
  *
  * @package   AlibabaCloud\Aegis
  *
- * @method V20161111\AegisApiResolver v20161111()
+ * @method static V20161111\AegisApiResolver v20161111()
  */
-class Aegis
+class AegisVersion
 {
     use VersionResolverTrait;
 }
