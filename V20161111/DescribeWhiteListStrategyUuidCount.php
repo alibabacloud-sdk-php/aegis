@@ -7,8 +7,14 @@ use AlibabaCloud\Rpc;
 /**
  * @method string getSourceIp()
  * @method $this withSourceIp($value)
+ * @method string getStrategyId()
+ * @method $this withStrategyId($value)
+ * @method string getLang()
+ * @method $this withLang($value)
+ * @method string getType()
+ * @method $this withType($value)
  */
-class DescribeScreenSettings extends Rpc
+class DescribeWhiteListStrategyUuidCount extends Rpc
 {
     public $product = 'aegis';
 
