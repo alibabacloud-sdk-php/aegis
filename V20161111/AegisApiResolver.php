@@ -8,6 +8,8 @@ use AlibabaCloud\Rpc;
 /**
  * Resolve Api based on the method name.
  *
+ * @method DescribeWebshellList describeWebshellList(array $options = [])
+ * @method AddEventProcess addEventProcess(array $options = [])
  * @method DescribeHostStatistics describeHostStatistics(array $options = [])
  * @method DescribeScreenOssUploadInfo describeScreenOssUploadInfo(array $options = [])
  * @method DescribeScreenCityMonitorData describeScreenCityMonitorData(array $options = [])
@@ -302,6 +304,30 @@ class V20161111Rpc extends Rpc
 
     /** @var string */
     public $serviceCode = 'vipaegis';
+}
+
+/**
+ * @method string getSourceIp()
+ * @method $this withSourceIp($value)
+ */
+class DescribeWebshellList extends V20161111Rpc
+{
+}
+
+/**
+ * @method string getSourceIp()
+ * @method $this withSourceIp($value)
+ * @method string getWarningType()
+ * @method $this withWarningType($value)
+ * @method string getSuspiciousEventIds()
+ * @method $this withSuspiciousEventIds($value)
+ * @method string getFrom()
+ * @method $this withFrom($value)
+ * @method string getLang()
+ * @method $this withLang($value)
+ */
+class AddEventProcess extends V20161111Rpc
+{
 }
 
 /**
@@ -2009,6 +2035,8 @@ class DescribeScreenSecurityStatInfo extends V20161111Rpc
  * @method $this withSourceIp($value)
  * @method string getReportId()
  * @method $this withReportId($value)
+ * @method string getLang()
+ * @method $this withLang($value)
  * @method string getReportStatus()
  * @method $this withReportStatus($value)
  */
@@ -2033,6 +2061,8 @@ class DescribeCustomizeReportChartList extends V20161111Rpc
  * @method $this withSourceIp($value)
  * @method string getReportId()
  * @method $this withReportId($value)
+ * @method string getLang()
+ * @method $this withLang($value)
  */
 class OperationCustomizeReportChart extends V20161111Rpc
 {
@@ -2051,6 +2081,8 @@ class OperationCustomizeReportChart extends V20161111Rpc
  * @method $this withReportStartDate($value)
  * @method string getRecipients()
  * @method $this withRecipients($value)
+ * @method string getLang()
+ * @method $this withLang($value)
  * @method string getTitle()
  * @method $this withTitle($value)
  * @method string getSendTime()
@@ -2065,6 +2097,8 @@ class SaveCustomizeReportConfig extends V20161111Rpc
 /**
  * @method string getSourceIp()
  * @method $this withSourceIp($value)
+ * @method string getLang()
+ * @method $this withLang($value)
  */
 class DescribeCustomizeReportList extends V20161111Rpc
 {
@@ -2089,6 +2123,8 @@ class DescribeCustomizeReportChartData extends V20161111Rpc
  * @method $this withSourceIp($value)
  * @method string getReportId()
  * @method $this withReportId($value)
+ * @method string getLang()
+ * @method $this withLang($value)
  */
 class DeleteCustomizeReport extends V20161111Rpc
 {
@@ -2099,6 +2135,8 @@ class DeleteCustomizeReport extends V20161111Rpc
  * @method $this withSourceIp($value)
  * @method string getReportId()
  * @method $this withReportId($value)
+ * @method string getLang()
+ * @method $this withLang($value)
  */
 class DescribeCustomizeReportConfigDetail extends V20161111Rpc
 {
@@ -2393,6 +2431,12 @@ class ModifyWebLockMachineList extends V20161111Rpc
 /**
  * @method string getLocalBackupDir()
  * @method $this withLocalBackupDir($value)
+ * @method string getMode()
+ * @method $this withMode($value)
+ * @method string getInclusiveFileType()
+ * @method $this withInclusiveFileType($value)
+ * @method string getExclusiveFile()
+ * @method $this withExclusiveFile($value)
  * @method string getSourceIp()
  * @method $this withSourceIp($value)
  * @method string getExclusiveFileType()
@@ -2465,6 +2509,12 @@ class DescribeWebLockBindList extends V20161111Rpc
 /**
  * @method string getLocalBackupDir()
  * @method $this withLocalBackupDir($value)
+ * @method string getMode()
+ * @method $this withMode($value)
+ * @method string getInclusiveFileType()
+ * @method $this withInclusiveFileType($value)
+ * @method string getExclusiveFile()
+ * @method $this withExclusiveFile($value)
  * @method string getSourceIp()
  * @method $this withSourceIp($value)
  * @method string getExclusiveFileType()
@@ -4079,6 +4129,8 @@ class ModifyStrategy extends V20161111Rpc
  * @method $this withName($value)
  * @method string getPageSize()
  * @method $this withPageSize($value)
+ * @method string getIds()
+ * @method $this withIds($value)
  * @method string getLang()
  * @method $this withLang($value)
  * @method string getCreateTsEnd()
