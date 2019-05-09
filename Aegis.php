@@ -5,8 +5,8 @@ namespace AlibabaCloud\Aegis;
 use AlibabaCloud\Client\Resolver\VersionResolver;
 
 /**
- * @deprecated
+ * @method static V20161111\AegisApiResolver v20161111()
  */
-class AegisVersion extends VersionResolver
+class Aegis extends VersionResolver
 {
 }
